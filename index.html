@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room | Premium Beverages & Food</title>
+    <meta name="description" content="Experience premium coffee, shakes, and delicious food at Escape Room">
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Escape Room</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section with parallax effect -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="heading-xl">Premium Brewing Experience</h1>
+            <p class="subheading">Discover the art of exceptional beverages</p>
+            <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg">Our Story</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Escape Room was founded with a simple vision: to create a perfect space where you can enjoy premium coffee, delicious food, and a cozy atmosphere.</p>
+                    <p>We carefully select the finest ingredients for our menu, ensuring exceptional quality and taste in every item we serve - from our specialty coffees to our signature thickshakes.</p>
+                    <p>Our skilled baristas and chefs are passionate about creating memorable experiences through innovative recipes and combinations that will delight your taste buds and keep you coming back.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="about-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu section with filtering -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg">Our Premium Menu</h2>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coffee">Coffees</button>
+                <button class="filter-btn" data-filter="tea">Teas</button>
+                <button class="filter-btn" data-filter="shakes">Thickshakes</button>
+                <button class="filter-btn" data-filter="combos">Combos</button>
+                <button class="filter-btn" data-filter="quickbites">Quick Bites</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Coffee -->
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-img">
+                        <div class="item-image coffee-1"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Espresso</h3>
+                        <p class="item-description">Pure, intense coffee experience with a rich crema on top.</p>
+                        <span class="item-price">₹69.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-img">
+                        <div class="item-image coffee-2"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Americano</h3>
+                        <p class="item-description">Espresso diluted with hot water, creating a coffee similar to drip coffee.</p>
+                        <span class="item-price">₹79.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-img">
+                        <div class="item-image coffee-3"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Cappuccino</h3>
+                        <p class="item-description">Equal parts espresso, steamed milk, and milk foam for a perfect balance.</p>
+                        <span class="item-price">₹119.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-img">
+                        <div class="item-image coffee-4"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Cafe Latte</h3>
+                        <p class="item-description">Espresso with steamed milk and a small layer of foam on top.</p>
+                        <span class="item-price">₹119.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-img">
+                        <div class="item-image coffee-5"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Hot Chocolate</h3>
+                        <p class="item-description">Rich and creamy hot chocolate made with premium cocoa.</p>
+                        <span class="item-price">₹129.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-img">
+                        <div class="item-image coffee-6"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Mocha</h3>
+                        <p class="item-description">Espresso combined with chocolate and steamed milk, topped with foam.</p>
+                        <span class="item-price">₹129.00</span>
+                    </div>
+                </div>
+                
+                <!-- Tea -->
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-img">
+                        <div class="item-image tea-1"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Green Tea</h3>
+                        <p class="item-description">Light and refreshing tea with numerous health benefits.</p>
+                        <span class="item-price">₹59.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-img">
+                        <div class="item-image tea-2"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Lemon Tea</h3>
+                        <p class="item-description">Aromatic tea infused with fresh lemon for a citrusy twist.</p>
+                        <span class="item-price">₹79.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-img">
+                        <div class="item-image tea-3"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Ginger Tea</h3>
+                        <p class="item-description">Warming tea with fresh ginger for a spicy kick and immune boost.</p>
+                        <span class="item-price">₹59.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-img">
+                        <div class="item-image tea-4"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Iced Tea</h3>
+                        <p class="item-description">Chilled tea perfect for hot days, served with ice and a slice of lemon.</p>
+                        <span class="item-price">₹139.00</span>
+                    </div>
+                </div>
+                
+                <!-- Shakes -->
+                <div class="menu-item" data-category="shakes">
+                    <div class="menu-img">
+                        <div class="item-image shake-1"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Chocolate</h3>
+                        <p class="item-description">Rich chocolate thickshake made with premium cocoa and creamy ice cream.</p>
+                        <span class="item-price">₹169.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="shakes">
+                    <div class="menu-img">
+                        <div class="item-image shake-2"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Chocochip Nutella</h3>
+                        <p class="item-description">Decadent blend of chocolate, Nutella, and chocolate chips for the ultimate indulgence.</p>
+                        <span class="item-price">₹209.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="shakes">
+                    <div class="menu-img">
+                        <div class="item-image shake-3"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Choco Oreo</h3>
+                        <p class="item-description">Chocolate thickshake blended with Oreo cookies for a delightful crunch.</p>
+                        <span class="item-price">₹189.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="shakes">
+                    <div class="menu-img">
+                        <div class="item-image shake-4"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Ferrero</h3>
+                        <p class="item-description">Luxurious thickshake inspired by Ferrero Rocher chocolates, with hazelnut and chocolate flavors.</p>
+                        <span class="item-price">₹209.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="shakes">
+                    <div class="menu-img">
+                        <div class="item-image shake-5"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Nutella</h3>
+                        <p class="item-description">Creamy thickshake made with the beloved chocolate-hazelnut spread.</p>
+                        <span class="item-price">₹189.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="shakes">
+                    <div class="menu-img">
+                        <div class="item-image shake-6"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Strawberry</h3>
+                        <p class="item-description">Refreshing strawberry thickshake made with real fruit for a sweet berry flavor.</p>
+                        <span class="item-price">₹169.00</span>
+                    </div>
+                </div>
+                
+                <!-- Combos -->
+                <div class="menu-item" data-category="combos">
+                    <div class="menu-img">
+                        <div class="item-image combo-1"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Solo Combo</h3>
+                        <p class="item-description">Perfect for one person - includes a sandwich, fries, and a beverage of your choice.</p>
+                        <span class="item-price">₹399.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="combos">
+                    <div class="menu-img">
+                        <div class="item-image combo-2"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Spicy Delight</h3>
+                        <p class="item-description">A flavorful combo with spicy snacks, fries, and two signature beverages.</p>
+                        <span class="item-price">₹449.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="combos">
+                    <div class="menu-img">
+                        <div class="item-image combo-3"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Super Saver Combo</h3>
+                        <p class="item-description">Value meal for sharing with multiple items and drinks at a special price.</p>
+                        <span class="item-price">₹999.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="combos">
+                    <div class="menu-img">
+                        <div class="item-image combo-4"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Chicken Fiesta</h3>
+                        <p class="item-description">Delicious combo featuring our signature chicken items with sides and beverages.</p>
+                        <span class="item-price">₹599.00</span>
+                    </div>
+                </div>
+                
+                <!-- Quick Bites -->
+                <div class="menu-item" data-category="quickbites">
+                    <div class="menu-img">
+                        <div class="item-image quickbite-1"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Veggie Escape Burger</h3>
+                        <p class="item-description">Delicious vegetable patty with fresh toppings in a soft bun.</p>
+                        <span class="item-price">₹139.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="quickbites">
+                    <div class="menu-img">
+                        <div class="item-image quickbite-2"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Kitkat Thickshake</h3>
+                        <p class="item-description">Creamy milkshake blended with Kitkat chocolate wafers.</p>
+                        <span class="item-price">₹179.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="quickbites">
+                    <div class="menu-img">
+                        <div class="item-image quickbite-3"></div>
+                    </div>
+                    <div class="menu-content">
+                        <h3 class="item-title">Plain Frappe</h3>
+                        <p class="item-description">Refreshing coffee-based blended ice drink, perfect for hot days.</p>
+                        <span class="item-price">₹149.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg">Gallery</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item gallery-item-1"></div>
+                <div class="gallery-item gallery-item-2"></div>
+                <div class="gallery-item gallery-item-3"></div>
+                <div class="gallery-item gallery-item-4"></div>
+                <div class="gallery-item gallery-item-5"></div>
+                <div class="gallery-item gallery-item-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg">Visit Us</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i data-feather="map-pin"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>P7W7+367, Muralinagar</p>
+                            <p>Madhavadhara, Visakhapatnam, Andhra Pradesh 530007</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-feather="clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Sunday: 10:00 AM - 11:00 PM</p>
+                            <p>Open All Week</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-feather="phone"></i>
+                        <div>
+                            <h3>Contact</h3>
+                            <p>Phone: 081256 92314</p>
+                            <p>Email: hello@escaperoom.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <div class="contact-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Escape Room</h2>
+                    <p>Premium beverages & delicious food</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Escape Room. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i data-feather="arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
